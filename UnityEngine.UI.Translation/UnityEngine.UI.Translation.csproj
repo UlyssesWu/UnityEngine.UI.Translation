@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DFD96B31-8FDE-408C-A086-4B9BB5E41CE5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>UnityEngine.UI.Translation</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="ColorUtility.cs" />
+    <Compile Include="PSDLoader.cs" />
+    <Compile Include="DXTLoader.cs" />
+    <Compile Include="TGALoader.cs" />
+    <Compile Include="System\IniFile.cs" />
+    <Compile Include="UnityEngine\AudioSourceOverride.cs" />
+    <Compile Include="UnityEngine\UI\Translation\ISubtitle.cs" />
+    <Compile Include="UnityEngine\UI\Translation\AudioSourceSubtitle.cs" />
+    <Compile Include="UnityEngine\UI\Translation\SubtitleUserInterfaceBase!1.cs" />
+    <Compile Include="UnityEngine\UI\Translation\TextPosition.cs" />
+    <Compile Include="UnityEngine\UI\Translation\TextPositionExtension.cs" />
+    <Compile Include="UnityEngine\UI\Translation\FontNameChangedEventArgs.cs" />
+    <Compile Include="UnityEngine\UI\Translation\FontSizeChangedEventArgs.cs" />
+    <Compile Include="UnityEngine\UI\Translation\FontColorChangedEventArgs.cs" />
+    <Compile Include="UnityEngine\UI\Translation\FontStyleChangedEventArgs.cs" />
+    <Compile Include="UnityEngine\UI\Translation\FontMarginChangedEventArgs.cs" />
+    <Compile Include="UnityEngine\UI\Translation\FontBorderChangedEventArgs.cs" />
+    <Compile Include="UnityEngine\UI\Translation\FontShadowChangedEventArgs.cs" />
+    <Compile Include="UnityEngine\UI\Translation\ISubtitleUserInterface.cs" />
+    <Compile Include="UnityEngine\UI\Translation\ISubtitleBorder.cs" />
+    <Compile Include="UnityEngine\UI\Translation\ISubtitleShadow.cs" />
+    <Compile Include="UnityEngine\UI\Translation\Subtitle.cs" />
+    <Compile Include="UnityEngine\UI\Translation\SubtitleCanvas.cs" />
+    <Compile Include="UnityEngine\UI\Translation\SubtitleData.cs" />
+    <Compile Include="UnityEngine\UI\Translation\SubtitleDataBase.cs" />
+    <Compile Include="UnityEngine\UI\Translation\SubtitleLine.cs" />
+    <Compile Include="UnityEngine\UI\Translation\SubtitleSettings.cs" />
+    <Compile Include="UnityEngine\UI\Translation\SubtitleTranslator.cs" />
+    <Compile Include="UnityEngine\UI\Translation\CursorOverride.cs" />
+    <Compile Include="UnityEngine\UI\Translation\MaskableGraphicRawImage.cs" />
+    <Compile Include="UnityEngine\UI\Translation\MaterialOverride.cs" />
+    <Compile Include="UnityEngine\UI\Translation\SpriteOverride.cs" />
+    <Compile Include="UnityEngine\UI\Translation\Texture2DCacheData.cs" />
+    <Compile Include="UnityEngine\UI\Translation\Texture2DData.cs" />
+    <Compile Include="UnityEngine\UI\Translation\Texture2DDumpData.cs" />
+    <Compile Include="UnityEngine\UI\Translation\Texture2DOverride.cs" />
+    <Compile Include="UnityEngine\UI\Translation\Texture2DOverrideData.cs" />
+    <Compile Include="UnityEngine\UI\Translation\InputFieldOverride.cs" />
+    <Compile Include="UnityEngine\UI\Translation\TranslationData.cs" />
+    <Compile Include="UnityEngine\UI\Translation\KeyTranslationData.cs" />
+    <Compile Include="UnityEngine\UI\Translation\MaskableGraphicText.cs" />
+    <Compile Include="UnityEngine\UI\Translation\RegexTranslationData.cs" />
+    <Compile Include="UnityEngine\UI\Translation\TextTranslator.cs" />
+    <Compile Include="UnityEngine\UI\Translation\TranslationDataBase.cs" />
+    <Compile Include="UnityEngine\UI\Translation\IniSettings.cs" />
+    <Reference Include="UnityEngine.ref">
+      <HintPath>..\ref\UnityEngine.ref.dll</HintPath>
+      <Aliases>U</Aliases>
+    </Reference>
+    <Reference Include="UnityEngine.UI.ref">
+      <HintPath>..\ref\UnityEngine.UI.ref.dll</HintPath>
+      <Aliases>global</Aliases>
+    </Reference>
+  </ItemGroup>
+</Project>
