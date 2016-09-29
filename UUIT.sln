@@ -10,16 +10,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UInjector", "UInjector\UInjector.csproj", "{DB6CE76B-98E5-4ACE-8879-C711C69B94BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFD96B31-8FDE-408C-A086-4B9BB5E41CE5}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{DFD96B31-8FDE-408C-A086-4B9BB5E41CE5}.Debug|x86.ActiveCfg = Debug|x86
 		{DFD96B31-8FDE-408C-A086-4B9BB5E41CE5}.Debug|x86.Build.0 = Debug|x86
+		{DFD96B31-8FDE-408C-A086-4B9BB5E41CE5}.Release|Any CPU.ActiveCfg = Release|x86
 		{DFD96B31-8FDE-408C-A086-4B9BB5E41CE5}.Release|x86.ActiveCfg = Release|x86
 		{DFD96B31-8FDE-408C-A086-4B9BB5E41CE5}.Release|x86.Build.0 = Release|x86
+		{DB6CE76B-98E5-4ACE-8879-C711C69B94BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6CE76B-98E5-4ACE-8879-C711C69B94BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6CE76B-98E5-4ACE-8879-C711C69B94BB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DB6CE76B-98E5-4ACE-8879-C711C69B94BB}.Debug|x86.Build.0 = Debug|Any CPU
+		{DB6CE76B-98E5-4ACE-8879-C711C69B94BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6CE76B-98E5-4ACE-8879-C711C69B94BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6CE76B-98E5-4ACE-8879-C711C69B94BB}.Release|x86.ActiveCfg = Release|Any CPU
+		{DB6CE76B-98E5-4ACE-8879-C711C69B94BB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
