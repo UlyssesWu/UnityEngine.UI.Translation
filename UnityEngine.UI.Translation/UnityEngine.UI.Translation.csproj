@@ -44,7 +44,7 @@
     <Compile Include="UnityEngine\AudioSourceOverride.cs" />
     <Compile Include="UnityEngine\UI\Translation\ISubtitle.cs" />
     <Compile Include="UnityEngine\UI\Translation\AudioSourceSubtitle.cs" />
-    <Compile Include="UnityEngine\UI\Translation\SubtitleUserInterfaceBase!1.cs" />
+    <Compile Include="UnityEngine\UI\Translation\SubtitleUserInterfaceBase.cs" />
     <Compile Include="UnityEngine\UI\Translation\TextPosition.cs" />
     <Compile Include="UnityEngine\UI\Translation\TextPositionExtension.cs" />
     <Compile Include="UnityEngine\UI\Translation\FontNameChangedEventArgs.cs" />

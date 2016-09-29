@@ -19,15 +19,15 @@ namespace UnityEngine.UI.Translation
         private float _MarginRight;
         private float _MarginTop;
         private const string DEFAULT_FONT_NAME = "Arial";
-        private const int DEFAULT_FONT_SIZE = 0x10;
-        public const int MAX_FONT_SIZE = 0x48;
+        private const int DEFAULT_FONT_SIZE = 16;
+        public const int MAX_FONT_SIZE = 72;
         public const int MIN_FONT_SIZE = 8;
         public const float TARGET_DPI = 72f;
 
         public SubtitleUserInterfaceBase()
         {
             this._FontName = "Arial";
-            this._FontSize = 0x10;
+            this._FontSize = 16;
             this._FontColor = U::UnityEngine.Color.white;
         }
 

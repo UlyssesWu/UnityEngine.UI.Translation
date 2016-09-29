@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-
+using Font = U::UnityEngine.Font;
 namespace UnityEngine.UI.Translation
 {
     public class MaskableGraphicText : MaskableGraphic

@@ -1,4 +1,5 @@
-﻿// Assembly UnityEngine.UI.Translation, Version 1.0.0.0
+﻿using System.Reflection;
+// Assembly UnityEngine.UI.Translation, Version 1.0.0.0
 
 //[assembly: System.Runtime.CompilerServices.Extension]
 [assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
@@ -14,4 +15,5 @@
 [assembly: System.Runtime.InteropServices.ComVisible(false)]
 [assembly: System.Runtime.InteropServices.Guid("3044bf3c-aaee-431a-b7e1-975e065343bb")]
 [assembly: System.Reflection.AssemblyFileVersion("0.16.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
 

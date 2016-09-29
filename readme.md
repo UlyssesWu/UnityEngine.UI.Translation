@@ -2,6 +2,8 @@
 
 A solution for Unity games (UGUI) translation, created by akyryz at first.
 
+Notice: This is for game translation without the source project. If you are a developer and searching for a solution to use in your own game, this project is not for you.
+
 ##UITL
 
 *UnityEngine.UI.Translation* by akyryz
@@ -14,7 +16,7 @@ TODO:
 
 ##UITI
 
-*UInjector* by Ulysses (Work in progress)
+*UInjector* by Ulysses
 
 The **Injector**. It modifies *UnityEngine* & *UnityEngine.UI* to create a version which can co-operate with the Loader. It aims to support Unity 5.x.
 
