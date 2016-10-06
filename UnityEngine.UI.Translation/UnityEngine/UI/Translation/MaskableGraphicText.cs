@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using Font = U::UnityEngine.Font;
 namespace UnityEngine.UI.Translation
 {
+    [BaseTypeOf("UnityEngine.UI.Text", "UnityEngine.UI.dll")]
     public class MaskableGraphicText : MaskableGraphic
 	{
 		private bool textchanged;

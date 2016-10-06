@@ -42,6 +42,8 @@
     <Compile Include="TGALoader.cs" />
     <Compile Include="System\IniFile.cs" />
     <Compile Include="UnityEngine\AudioSourceOverride.cs" />
+    <Compile Include="UnityEngine\ReplaceMethodAttribute.cs" />
+    <Compile Include="UnityEngine\BaseTypeOfAttribute.cs" />
     <Compile Include="UnityEngine\UI\Translation\ISubtitle.cs" />
     <Compile Include="UnityEngine\UI\Translation\AudioSourceSubtitle.cs" />
     <Compile Include="UnityEngine\UI\Translation\SubtitleUserInterfaceBase.cs" />

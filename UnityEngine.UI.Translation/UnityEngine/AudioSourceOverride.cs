@@ -5,6 +5,7 @@ using UnityEngine.UI.Translation;
 using EngineAudioSource = U::UnityEngine.AudioSource;
 namespace UnityEngine
 {
+    [BaseTypeOf("UnityEngine.AudioSource", "UnityEngine.dll")]
     public class AudioSource : U::UnityEngine.Behaviour
     {
         protected void DoPlay(ulong delay = 0L)

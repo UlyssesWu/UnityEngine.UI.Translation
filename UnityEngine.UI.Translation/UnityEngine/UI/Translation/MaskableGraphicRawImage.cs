@@ -1,10 +1,10 @@
 ﻿extern alias U;
+using System;
+using System.Threading;
+using UnityEngine.UI;
 namespace UnityEngine.UI.Translation
 {
-    using System;
-    using System.Threading;
-    using UnityEngine.UI;
-
+    [BaseTypeOf("UnityEngine.UI.RawImage", "UnityEngine.UI.dll")]
     public class MaskableGraphicRawImage : MaskableGraphic
     {
         protected Texture2DOverrideData overrideData;
