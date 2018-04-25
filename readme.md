@@ -1,10 +1,12 @@
-#Unity UI Translation
+# Unity UI Translation
 
 A solution for Unity games (UGUI) translation, created by akyryz at first.
 
+Currently, it supports Unity **5.x-5.6.0**. It won't work on Unity 5.6.3+ because of some type changes. The further versions will focus on the newest Unity versions.
+
 Notice: This is for game translation without the source project. If you are a developer and searching for a solution to use in your own game, this project is not for you.
 
-##UITL
+## UITL
 
 *UnityEngine.UI.Translation* by akyryz
 
@@ -14,7 +16,7 @@ It works with modified *UnityEngine* & *UnityEngine.UI* to dump texts/textures/a
 TODO: 
 - Font support
 
-##UITI
+## UITI
 
 *UInjector* by Ulysses
 
@@ -22,7 +24,7 @@ The **Injector**. It modifies *UnityEngine* & *UnityEngine.UI* to create a versi
 
 It only supports the Loader here and may not support akyryz's new version since I have no idea what he might add into it  :)  and I may add some other things into it later.
 
-##Demo
+## Demo
 
 Japanese: (Original)
 
