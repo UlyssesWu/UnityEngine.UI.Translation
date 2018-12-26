@@ -1,10 +1,10 @@
 ﻿extern alias U;
+using System;
 using Texture2D = U::UnityEngine.Texture2D;
 
 namespace UnityEngine.UI.Translation
 {
-    using System;
-
+    [BaseTypeOf("UnityEngine.Cursor", "UnityEngine.dll")]
     public class CursorOverride
     {
         private static Texture2DOverrideData overrideData;

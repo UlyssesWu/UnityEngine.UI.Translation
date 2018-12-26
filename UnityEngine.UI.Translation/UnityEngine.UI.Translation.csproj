@@ -17,7 +17,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;UNITY4</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -42,8 +42,11 @@
     <Compile Include="TGALoader.cs" />
     <Compile Include="System\IniFile.cs" />
     <Compile Include="UnityEngine\AudioSourceOverride.cs" />
+    <Compile Include="UnityEngine\ReplaceMethodAttribute.cs" />
+    <Compile Include="UnityEngine\BaseTypeOfAttribute.cs" />
     <Compile Include="UnityEngine\UI\Translation\ISubtitle.cs" />
     <Compile Include="UnityEngine\UI\Translation\AudioSourceSubtitle.cs" />
+    <Compile Include="UnityEngine\UI\Translation\JsonConfig.cs" />
     <Compile Include="UnityEngine\UI\Translation\SubtitleUserInterfaceBase.cs" />
     <Compile Include="UnityEngine\UI\Translation\TextPosition.cs" />
     <Compile Include="UnityEngine\UI\Translation\TextPositionExtension.cs" />

@@ -1,7 +1,8 @@
-﻿namespace UnityEngine.UI.Translation
-{
-    using UnityEngine.UI;
+﻿using UnityEngine.UI;
 
+namespace UnityEngine.UI.Translation
+{
+    [BaseTypeOf("UnityEngine.UI.InputField","UnityEngine.UI.dll")]
     public class InputFieldOverride : Selectable
     {
         public void SetPlaceholder(Graphic value)

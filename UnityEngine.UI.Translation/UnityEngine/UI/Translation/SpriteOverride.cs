@@ -1,11 +1,11 @@
 ﻿extern alias U;
+using System;
+using System.Threading;
 using Sprite = U::UnityEngine.Sprite;
 using Texture2D = U::UnityEngine.Texture2D;
 namespace UnityEngine.UI.Translation
 {
-    using System;
-    using System.Threading;
-
+    [BaseTypeOf("UnityEngine.Sprite", "UnityEngine.dll")]
     public class SpriteOverride : U::UnityEngine.Object
     {
         private Texture2DOverrideData overrideData;
