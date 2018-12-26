@@ -1,8 +1,10 @@
 ﻿extern alias U;
 using System;
 using System.Globalization;
+using System.IO;
 using Color32 = U::UnityEngine.Color32;
 using Color = U::UnityEngine.Color;
+using JsonUtility = U::UnityEngine.JsonUtility;
 
 namespace UnityEngine.UI.Translation
 {
@@ -26,7 +28,11 @@ namespace UnityEngine.UI.Translation
 
     internal static class SubtitleSettings
 	{
-		private const string SECTION = "Subtitles";
+        internal static string SettingsFileName => "Subtitle.json";//"Translation.ini";
+
+        internal static string SettingsFilePath => string.Concat(IniSettings.SettingsFileDir, SettingsFileName);
+
+	    private const string SECTION = "Subtitles";
 
 		private const string ANCHORKEY = "iAnchor";
 
@@ -327,12 +333,38 @@ namespace UnityEngine.UI.Translation
 		}
 
 		static SubtitleSettings()
-		{
-			IniSettings.LoadSettings += new Action<IniFile>(SubtitleSettings.Load);
-			IniSettings.Load();
-		}
+        {
+#if UNITY4
+            IniSettings.LoadSettings += new Action<IniFile>(SubtitleSettings.LoadIni);
+            IniSettings.LoadIni();
+#else
+            Load();
+#endif
+        }
+        private static void Load()
+        {
+            var config = JsonUtility.FromJson<SubtitleConfig>(SettingsFilePath);
+            if (config == null)
+            {
+                config = new SubtitleConfig();
+                File.WriteAllText(SettingsFilePath, JsonUtility.ToJson(config, true));
+            }
+            Anchor = Anchor.Parse(config.Anchor.ToString(), SubtitleSettings.Anchor);
+            FontName = config.FontName;
+            FontSize = config.FontSize;
+            FontColor = ColorUtility.ToColor(config.FontColor);
+            Bold = config.Bold;
+            Italic = config.Italic;
+            BorderWidth = config.BorderWidth;
+            ShadowOffset = config.ShadowOffset;
+            MarginLeft = config.MarginLeft;
+            MarginTop = config.MarginTop;
+            MarginRight = config.MarginRight;
+            MarginBottom = config.MarginBottom;
+            SubtitleSettings.initialized = true;
+        }
 
-		private static void Load(IniFile ini)
+        private static void LoadIni(IniFile ini)
 		{
 			int num;
 			bool flag;
